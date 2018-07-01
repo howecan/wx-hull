@@ -1,0 +1,42 @@
+/**index.wxss**/
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width:100vw;
+  height:100vh;
+  background-image: url(http://www.hukang.top/img/wxbg.jpg);
+  background-position: center 0;
+  background-size: auto 100%;
+}
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top:20%;
+}
+
+.userinfo-avatar {
+  width: 150rpx;
+  height: 150rpx;
+  margin: 40rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname,.usermotto {
+  display: block;
+  text-align: center;
+  color: #fff;
+  height: 60rpx;
+  width: 300rpx;
+  line-height: 60rpx;
+  border-radius: 30rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  background: linear-gradient(to right, #9e1a66 , #2957b4);
+}
+
+.usermotto {
+  margin-bottom:50rpx;
+  background: linear-gradient(to left, #9e1a66 , #2957b4);
+}

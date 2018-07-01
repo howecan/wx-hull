@@ -1,0 +1,37 @@
+<!--pages/movie-reviews/movie-reviews.wxml-->
+<view class="container">
+<scroll-view scroll-y="true" style="height:{{winHeight}}px" bindscrolltolower="loadreviews">
+  <block wx:for="{{review.reviews}}" wx:key="{{review.reviews}}">
+    <view class="review-wrapper">
+      <view class="review-content">
+
+        <image class="image" src="{{item.author.avatar}}"></image>
+
+        <view class="review-author">
+          <text class="name">{{item.author.name}}</text>
+          <text class="signature">{{item.author.signature}}</text>
+          <text class="creattime">{{item.updated_at}}</text>
+        </view>
+
+
+        <view class="rating">
+          <view class="rating-star allstar{{item.rating.value}}"></view>
+        </view>
+
+      </view>
+      <view class="session" bindtap="bindextension" data-index="{{index}}">
+         <text class="review-title">{{item.title}}</text>
+          <text class="desc-content  {{showalldesc ? 'desc-all' : ''}}" >{{item.summary}}</text>
+          <block wx:if="{{!showalldesc}}">
+            <text class="extension" >展开</text>
+          </block>
+      </view>
+      <view class="session wish-session">
+        <text class="wish-btn">有用：{{item.useful_count}}</text>
+        <text class="wish-btn">没用：{{item.useless_count}}</text>
+      </view>
+    </view>
+
+  </block>
+</scroll-view>
+</view>

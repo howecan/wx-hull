@@ -1,0 +1,56 @@
+/* pages/movie-rating/movie-rating.wxss */
+.rating{
+  display:flex;
+  flex-direction:row;
+  margin:10rpx 0;
+  width: 55px;
+  height:10px;
+  position: relative;
+}
+.rating-star{
+  position:absolute;
+  background-image:url(http://static.nipic.com/images/works_star_png24.png);
+  display:inline-block;
+  width:55px;
+  height:10px;
+  background-repeat:no-repeat;
+  background-size: cover;
+
+}
+.rating-average{
+  margin-left:120rpx;
+  font-size:20rpx;
+  height:22rpx;
+  line-height: 22rpx;
+  color:#9e9e9e;
+}
+.allstar1{
+background-position: 0px -11px;
+}
+.allstar2{
+background-position: 0px -22px;
+}
+.allstar3{
+background-position: 0px -33px;
+}
+.allstar4{
+background-position: 0px -44px;
+}
+.allstar5{
+background-position: 0px -55px;
+}
+.allstar6{
+background-position: 0px -66px;
+}
+.allstar7{
+background-position: 0px -77px;
+}
+.allstar8{
+background-position: 0px -88px;
+}
+.allstar9{
+background-position: 0px -99px;
+}
+.allstar0{
+background-position: 0px 0px;
+}

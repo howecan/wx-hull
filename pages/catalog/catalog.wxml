@@ -1,0 +1,12 @@
+<!--pages/catalog/catalog.wxml-->
+
+<view class="catalog" >
+  <block wx:for="{{lists}}" wx:key="{{lists}}">
+       <view class="catalogli" bindtap="bindtotype" data-id="{{item.id}}">
+         <view wx:if="{{item.level == 1}}"><text class="h2" >{{item.title}}</text></view>
+         <view wx:elif="{{item.level == 2}}"><text class="h3" >{{item.title}}</text></view>
+       </view>
+  </block>
+
+</view>
+

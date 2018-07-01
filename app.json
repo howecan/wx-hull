@@ -1,0 +1,47 @@
+{
+  "pages":[
+    "pages/home/home",
+    "pages/movie-more/movie-more",
+    "pages/movie-types/movie-types",
+    "pages/movie-detail/movie-detail",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/movie-grid/movie-grid",
+    "pages/movie-list/movie-list",
+    "pages/catalog/catalog",
+    "pages/casts-detail/casts-detail"
+  ],
+  "tabBar": {
+    "color": "#999999",
+    "selectedColor": "#ff5555",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "statics/tabbar/icon-1.png",
+        "selectedIconPath": "statics/tabbar/icon-1-active.png"
+      },
+      {
+        "pagePath": "pages/movie-more/movie-more",
+        "text": "消息",
+        "iconPath": "statics/tabbar/icon-13.png",
+        "selectedIconPath": "statics/tabbar/icon-13-active.png"
+      },
+      {
+        "pagePath": "pages/catalog/catalog",
+        "text": "目录",
+        "iconPath": "statics/tabbar/icon-3.png",
+        "selectedIconPath": "statics/tabbar/icon-3-active.png"
+      }
+    ],
+    "backgroundColor": "#f7f7fa",
+    "borderStyle": ""
+  },
+  "window":{
+    "backgroundTextStyle":"#008e9c",
+    "navigationBarBackgroundColor": "#008e9c",
+    "navigationBarTitleText": "赫尔101",
+    "navigationBarTextStyle":"#fff"
+    
+  }
+}
