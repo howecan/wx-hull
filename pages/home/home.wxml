@@ -18,7 +18,7 @@
     </block>
 </view>
   <view class="search-movie" >
-       <input type='text' placeholder-class="placeholder"  placeholder="{{placeholder}}" class="search-txt" maxlength='40' confirm-type='搜索'   bindinput='input1'  bindconfirm='bindToSearch' />
+       <input type='text' placeholder-class="placeholder"  placeholder="{{placeholder}}" class="search-txt" maxlength='40' confirm-type='search'   bindinput='input1'  bindconfirm='bindToSearch' />
        <icon type="search" size="16" class="search-icon" bindtap='bindToSearch'></icon>
   </view>
   <view class="page-session">

@@ -44,11 +44,16 @@ App({
     ajaxBase: "https://www.hullchina.com/kk/",
     searchURL:'json_content_list.php?kw=',
     newslist:'json_content_list.php',
+    askslist: 'json_diy_list.php?action=list',
+    answerurl:'json_diy_list.php?action=post',
     banner:'json_banner_list.php',
     circle:'json_banner_list.php?id=1',
     subject:'json_view.php?aid=',
     catalog: 'json_type.php',
+    ranklist: 'json_member.php',
     download: 'https://www.hullchina.com',
+    mainpic:'/images/wx-question.jpg',
     appname: "赫尔101",
+    authorize:''
   }
 })

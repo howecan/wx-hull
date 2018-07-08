@@ -189,8 +189,14 @@ Page({
   },
   bindtodetail(event) {
     var id = event.currentTarget.dataset.id
-    wx.navigateTo({
-      url: '../movie-detail/movie-detail?id=' + id,
-    })
+    if(id>0){
+      wx.navigateTo({
+        url: '../movie-detail/movie-detail?id=' + id 
+      })
+    }else{
+      wx.switchTab({
+        url: '../rank/rank'
+      })
+    }
   }
 })
